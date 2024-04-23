@@ -30,7 +30,7 @@
 		  
 	   }else if($page==7){
 		   
-		    include("pages/product/add_product.php");
+		    include("forms/add_manufacturer.php");
 		  
 	   }else if($page==8){
 		   

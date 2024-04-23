@@ -14,7 +14,7 @@ if (isset($_POST['upp_manufac'])) {
 		$result = "Manufacture Updated Successfully";
 	}
 }
-if (isset($_POST['del_manufac'])) {
+if (isset($_POST['m_id'])) {
 	$m_id = $_POST['m_id'];
 	$query = $db->query("delete from manufacturer where id= $m_id");
 	if ($query ) {
@@ -46,12 +46,15 @@ if (isset($_POST['del_manufac'])) {
 				while (list($_id,$_mname,$_minfo,$_date,$_uname) = $query->fetch_row()) { 
 					$date = date("d-m-Y",strtotime($_date));
 				?>
-					<tr data-toggle="modal" data-target="#modal_<?php echo $_id ?>"> 
+					<tr> 
 						<td><?php echo $_id ?></td>
 						<td><?php echo $_mname ?></td>
 						<td><?php echo $_minfo ?></td>
 						<td><?php echo $date ?></td>
 						<td><?php echo $_uname ?></td>
+						<td><span data-toggle="modal" data-target="#modal_<?php echo $_id ?>"><button type="button" class="btn btn-primary" data-dismiss="modal">Edit</button></span>
+					</td>
+
 					</tr>
 					<div class="modal fade" id="modal_<?php echo $_id ?>" role="dialog">
 						<div class="modal-dialog" role="document">
@@ -80,7 +83,7 @@ if (isset($_POST['del_manufac'])) {
 									</div>
 									<div class="modal-footer">
 										<input type="submit" value="Update" name="upp_manufac" class="btn btn-primary">
-										<input type="submit" value="Delete" name="del_manufac" class="btn btn-primary">
+										<input type="submit" value="Delete" name="m_id" class="btn btn-primary">
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 									</div>
 								</div>

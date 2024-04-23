@@ -13,7 +13,7 @@ if(isset($_POST['btn-login'])) {
 	$_SESSION['s_name'] = $_uname;
 	header("location:home.php");
 }
-include "header.php";
+include "include/header.php";
 ?>
 <div class="container mt-5"> 
 	<div class="row"> 

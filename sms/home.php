@@ -7,11 +7,11 @@ if (!isset($_SESSION['s_id'])) {
 	header("location:index.php");
 }
 
-include "header.php";
+include "include/header.php";
 ?>
 
 <section class="main-menu"> 
-	<?php include "main-menu.php" ?>
+	<?php include "include/main-menu.php" ?>
 </section>
 
 <section class="main-content mt-5"> 
@@ -24,4 +24,4 @@ include "header.php";
 
 
 
-<?php include "footer.php"; ?>
+<?php include "include/footer.php"; ?>
