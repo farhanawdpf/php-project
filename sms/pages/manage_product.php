@@ -43,7 +43,7 @@ if (isset($_POST['del_product'])) {
 		</thead>
 		<tbody> 
 			<?php  
-				$query = $db->query("select p.id,p.name,p.p_info,p.date,m.name,m.id,u.username from manufacturer m, user u, product p where p.user_id = u.id and p.manufac_id = m.id ");
+				$query = $db->query("select p.id,p.name,p.p_info,p.date,m.name,m.id,u.username from manufacturer m, user u, product p where p.user_id = u.id and p.manufac_id = m.id");
 				while (list($_id,$_pname,$_pinfo,$_date,$_mname,$_m_id,$_uname) = $query->fetch_row()) { 
 					$date = date("d-m-Y",strtotime($_date));
 				?>
