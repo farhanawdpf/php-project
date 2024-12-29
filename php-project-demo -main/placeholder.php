@@ -3,7 +3,7 @@
    if(isset($_GET["page"])){
 	   $page=$_GET["page"];
 	   
-	   if($page==1){
+	   if($page=="rafi"){
 		   
 		 include("pages/user/add_user.php"); 
 		   
