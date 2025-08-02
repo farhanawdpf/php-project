@@ -1,5 +1,16 @@
 <?php
-   
+   if(isset($_GET['user'])){
+	$user = $_GET['user'];
+	if ($user == 1) {
+		include "welcome.php";
+	}elseif($user == 2){
+		include "welcome.php";
+	}elseif($user == 3){
+		header("location:logout.php");
+	}
+}
+
+
    if(isset($_GET["page"])){
 	   $page=$_GET["page"];
 	   
@@ -12,8 +23,6 @@
 		   include("pages/user/manage_user.php");
 		  
 	   }else if($page==3){
-		   
-		   //include("pages/contact/view_contact.php");
 		   include("pages/user/edit_user.php");
 		  
 	   }else if($page==4){
@@ -30,23 +39,7 @@
 		  
 	   }else if($page==7){
 		   
-		    include("forms/add_manufacturer.php");
-		  
-	   }else if($page==8){
-		   
-		    include("pages/product/manage_product.php");
-		  
-	   }else if($page==9){
-		   
-		    include("pages/product/view_products.php");
-		  
-	   }else if($page==10){
-		   
-		    include("pages/product/edit_product.php");
-		  
-	   }else if($page==11){
-		   
-		    include("pages/order/view_orders.php");
+		    include("pages/category/add_cat.php");
 		  
 	   }
 	   

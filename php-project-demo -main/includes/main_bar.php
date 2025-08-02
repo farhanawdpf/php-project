@@ -282,15 +282,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="index.php?page==7" class="nav-link">
+                <a href="index.php?page==3" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Project Add</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../examples/project-edit.html" class="nav-link">
+                <a href="index.php?page=7" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Project Edit</p>
+                  <p>Add User</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -334,12 +334,10 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Blank Page</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
             </ol>
           </div>
         </div>
