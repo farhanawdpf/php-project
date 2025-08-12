@@ -9,6 +9,7 @@
   <?php 
  include("include/sidebar.php");
  ?>
+ <div>
     <!-- Main content -->
     <section class="content">
 
