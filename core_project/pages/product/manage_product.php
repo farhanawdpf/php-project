@@ -18,7 +18,18 @@
 	   //$added_on=date("d M Y h:i A",strtotime($added_on));
 	   
 	   
-	 echo "<tr><td>$id</td><td>$barcode</td><td>$item_name</td><td>$type</td><td>$uom</td><td>$category</td><td>$mfg</td><td>$desc</td><td><img src='img/$photo' height='50' /></td><td><form action='home.php?page=10' method='post' style='display:inline'>
+	 echo "<tr>
+	 		<td>$id</td>
+			<td>$barcode</td>
+			<td>$item_name</td>
+			<td>$type</td>
+			<td>$uom</td>
+			<td>$category</td>
+			<td>$mfg</td>
+			<td>$desc</td>
+			<td><img src='img/$photo' height='50' /></td>
+			<td>
+	 <form action='home.php?page=10' method='post' style='display:inline'>
 <input type='hidden' name='txtId' value='$id' />
 <input type='submit' name='btnEdit' class='material-icons red600' value='edit'>
 </form><form action='home.php?page=8' method='post' style='display:inline' onsubmit='return confirm(\"Are you sure?\")'><input type='hidden' name='txtId' value='$id' /><input type='submit' name='btnDelete' class='material-icons red600' value='delete'></form></td></tr>";  
